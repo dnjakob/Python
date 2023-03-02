@@ -7,7 +7,7 @@ def xando(eingabe):
             counterx += 1
         else:
             countero += 1
-    return "Es gibt",counterx,"xs und",countero,"os"
+    return [counterx, countero]
 
 text = input("Gebe x und o ein ").lower()        
-print(xando(text))
+print("Es gibt",xando(text)[0]+"x und",xando(text)[1]+"y")
