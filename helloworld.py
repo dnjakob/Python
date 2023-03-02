@@ -10,4 +10,4 @@ def xando(eingabe):
     return [counterx, countero]
 
 text = input("Gebe x und o ein ").lower()        
-print("Es gibt",xando(text)[0]+"x und",xando(text)[1]+"y")
+print("Es gibt",xando(text)[0],"x und",xando(text)[1],"y")
