@@ -21,6 +21,9 @@ if x > 10:
     print(", aber nicht größer als 20.\n")
 
 
+def ausgabe(x):
+  print(x[1],"\n")
+
 JDM = ["Nissan", "Toyota", "Honda"]
 USDM = ["Ford", "Chevrolet", "Chrysler", "Dodge"]
 EDM = ["BMW", "VW", "Audi", "Porsche", "Opel"]
@@ -35,6 +38,8 @@ else:
 while len(Newmarket) > i:
    print(Newmarket[i],"\n")
    i += 1
+
+ausgabe(Newmarket)
 
 for x in range(6):
   if x == 3: break
