@@ -24,3 +24,5 @@ print("Durchschnittswert der Groesse: ",np.mean(rohdaten['groesse']))
 print("Durchschnittswert der Breite: ",np.mean(rohdaten['beine']))
 
 print("Durchschnittswert der Label: ",np.mean(rohdaten['label']))
+
+print(np.mean(feature.T, axis=0))
