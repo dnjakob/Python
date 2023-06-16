@@ -1,6 +1,3 @@
-import math
-
-
 def rechner(operator):
     zahl1=int(input("Bitte geben Sie die erste Zahl ein: "))
     zahl2=int(input("Bitte geben Sie die zweite Zahl ein: "))
