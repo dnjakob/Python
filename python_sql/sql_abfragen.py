@@ -1,5 +1,6 @@
 import mariadb as mdb
 import sys
+import sql_tabellen as sqlT
 
 try:
     conn = mdb.connect(
@@ -14,5 +15,7 @@ except mdb.Error as e:
     sys.exit(1)
 
 cur = conn.cursor()
+
+sqlT.createDatabaseAndTables()
 
 conn.close()
