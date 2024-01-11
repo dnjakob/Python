@@ -17,6 +17,7 @@ except mdb.Error as e:
 cur = conn.cursor()
 
 def createDatabaseAndTables():
+    cur.execute("DROP DATABASE IF EXISTS pythondatenbank")
     cur.execute("CREATE DATABASE IF NOT EXISTS pythondatenbank")
     cur.execute("USE pythondatenbank")
     cur.execute("CREATE TABLE IF NOT EXISTS erstetabelle (id SMALLINT NOT NULL, tier TINYTEXT, age SMALLINT, farbe TINYTEXT)")
