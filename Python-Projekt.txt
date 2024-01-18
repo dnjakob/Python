@@ -1,0 +1,6 @@
+Python-Projekt
+
+-Python-Framework: Django
+-Front-End: Django HTML-Templates, Bootstrap, JS, evtl. CSS-Library
+-Back-End: Vlt. Rest-Service
+-Datenbank: MariaDB
