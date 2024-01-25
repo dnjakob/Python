@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>FlaskAnwendung</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="ueberschrift">
+            <h1>FlaskAnwendung</h1>
+        </div>
+        <div id="inhalt">
+            <div id="textUndBild">
+                <div id="text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore
+                        et
+                        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                        rebum.
+                        Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                        sit
+                        amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                        aliquyam
+                        erat,
+                        sed
+                        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren,
+                        no
+                        sea
+                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing
+                        elitr,
+                        sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        At
+                        vero
+                        eos
+                        et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                        Lorem
+                        ipsum
+                        dolor sit amet.
+
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum
+                        dolore eu
+                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum
+                        zzril
+                        delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing
+                        elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip
+                        ex ea
+                        commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+                </div>
+
+                <div id="bild"> <img
+                        src="https://www.euscd.de/wp-content/uploads/2022/01/10524564_244433855750718_888286481842516839_n.jpg"
+                        alt="Wer weiß"></div>
+            </div>
+            <div id="calculator">
+                <h2>Taschenrechner</h2>
+                <form method="post" action="{{ url_for('rechner') }}" id="rechner_form">
+                    <label for="ersteZahl">Erste Zahl:</label>
+                    <input type="text" name="ersteZahl" id="ersteZahl"><br>
+                    <label for="zweiteZahl">Zweite Zahl:</label>
+                    <input type="text" name="zweiteZahl" id="zweiteZahl"><br>
+                    <label for="rechenOperator">Rechenoperator:</label>
+                    <select name="rechenOperator" id="rechenOperator">
+                        <option value="addition">Addition</option>
+                        <option value="subtraktion">Subtraktion</option>
+                        <option value="multiplikation">Multiplikation</option>
+                        <option value="division">Division</option>
+                    </select><br>
+                    <input type="submit" value="Abschicken">
+                    {% if rechen_erfolg == True %}
+                    <br>
+                    <p>Das Ergebnis der Rechnung lautet: {{ergebnis}}</p>
+                    {% endif %}
+                    {% if rechen_erfolg == False %}
+                    <br>
+                    <p>{{fehler}} - {{ergebnis}}</p>
+                    {% endif %}
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

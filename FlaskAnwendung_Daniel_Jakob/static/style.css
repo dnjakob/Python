@@ -1,0 +1,73 @@
+body {
+    background-color: turquoise;
+    font-family: Arial;
+    display: flex;
+    height: 100vh;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#ueberschrift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: royalblue;
+    border: ridge;
+}
+
+#inhalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#textUndBild {
+    display: flex;
+}
+
+#text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#bild {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    width: 75%;
+}
+
+img {
+    border: 10px solid;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
