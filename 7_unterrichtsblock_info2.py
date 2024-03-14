@@ -35,6 +35,7 @@ def berechne_modus(liste):
 berechne_modus(zahlen_aufg03)
  
 #   Aufgabe 4
+
 zahlen_aufg04 = [1, 2, 3, 4, 4, 5, 5, 5]
 
 def kombinierte_statistik(liste):
@@ -60,7 +61,7 @@ def filter_und_statistik(liste:list, minWert, maxWert):
     tuple = (mittelWert, median, modus)
     return tuple
  
-filter_und_statistik(zahlen, 20, 60)
+filter_und_statistik(zahlen_aufg05, 20, 60)
  
 ##  Standardabweichung
 #   Aufgabe 1
