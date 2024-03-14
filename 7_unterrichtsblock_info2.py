@@ -10,7 +10,7 @@ def berechene_mittelWert(liste):
     mittelWert = numpy.mean(liste)
     return mittelWert
  
-berechene_mittelWert(zahlen_aufg01)
+print(berechene_mittelWert(zahlen_aufg01))
  
 #   Aufgabe 2
 
@@ -21,8 +21,8 @@ def berechne_median(liste):
     median = numpy.median(liste)
     return(median)
  
-berechne_median(zahlen1_aufg02)
-berechne_median(zahlen2_aufg02)
+print(berechne_median(zahlen1_aufg02))
+print(berechne_median(zahlen2_aufg02))
  
 #   Aufgabe 3
 
@@ -32,7 +32,7 @@ def berechne_modus(liste):
     modus = stats.mode(liste)
     return(modus)
  
-berechne_modus(zahlen_aufg03)
+print(berechne_modus(zahlen_aufg03))
  
 #   Aufgabe 4
 
@@ -45,7 +45,7 @@ def kombinierte_statistik(liste):
     tuple = (mittelWert, median, modus)
     return tuple
  
-kombinierte_statistik(zahlen_aufg04)
+print(kombinierte_statistik(zahlen_aufg04))
  
 #   Aufgabe 5
 
@@ -54,14 +54,14 @@ zahlen_aufg05 = [10, 20, 30, 40, 50, 60, 70]
 def filter_und_statistik(liste:list, minWert, maxWert):
     for zahl in liste:
         if zahl < minWert or zahl > maxWert:
-            liste = liste.remove(zahl)
+            liste.remove(zahl)
     mittelWert = numpy.mean(liste)
     median = numpy.median(liste)
     modus = stats.mode(liste)
     tuple = (mittelWert, median, modus)
     return tuple
  
-filter_und_statistik(zahlen_aufg05, 20, 60)
+print(filter_und_statistik(zahlen_aufg05, 20, 60))
  
 ##  Standardabweichung
 #   Aufgabe 1
@@ -74,7 +74,7 @@ def berechne_varianz(liste):
     varianz = numpy.mean(differenz)
     return varianz
        
-berechne_varianz(zahlen_aufg06)
+print(berechne_varianz(zahlen_aufg06))
  
 #   Aufgabe 2
 
@@ -84,7 +84,7 @@ def berechene_standardabweichung(liste):
     standardabweichung = numpy.sqrt(berechne_varianz(liste))
     return(standardabweichung)
  
-berechene_standardabweichung(zahlen_aufg07)
+print(berechene_standardabweichung(zahlen_aufg07))
 
  
 #   Berechnung von Perzentile
